@@ -5,8 +5,6 @@
   --contentBg: #efefef;
   --textColor: #000000;
   --black: #191718;
-  --mobile: 768px;
-  --pc: 1024px;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -21,4 +19,21 @@ body {
   height: 100%;
   object-fit: contain;
   object-cover: center;
+}
+.wrap-sidebar {
+}
+.menu {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-inde: 10;
+  background-color: rgba(0, 0, 0, 0.7);
 }

@@ -13,10 +13,10 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  cursor: pointer;
 }
 .logo-container {
   width: 310px;
+  cursor: pointer;
 }
 .banner {
   background-color: var(--contentBg);
@@ -58,4 +58,9 @@ footer {
 }
 footer span {
   margin-left: 129px;
+}
+@media (max-width: 768px) {
+  .items-wrap {
+    flex-direction: column;
+  }
 }
