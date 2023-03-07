@@ -1,0 +1,28 @@
+.sidebar {
+  background: var(--black);
+  color: var(--grayText);
+  min-width: 150px;
+  font-weight: 700;
+}
+
+.sidebar-nav {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  border-bottom: 1px solid var(--gray);
+}
+.sidebar-nav:hover {
+  background-color: var(--gray);
+  color: var(--white);
+}
+.sidebar-nav.active {
+  color: var(--white);
+}
+.sidebar-nav a {
+  display: block;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
