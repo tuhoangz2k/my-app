@@ -1,16 +1,15 @@
 import React from 'react';
 import { navigates } from '../../constants';
 import './Sidebar.css';
+import NavLink from '../NavLink';
 export default function SideBar() {
   return (
-    <div className="sidebar">
+    <nav className="sidebar">
       <ul>
         {navigates.map((ele, idx) => (
-          <li className={`sidebar-nav ${idx === 0 && 'active'}`} key={idx}>
-            <a href={ele?.link}>{ele?.title}</a>
-          </li>
+          <NavLink href={ele.link} title={ele.title} key={idx} isActive={idx === 0} />
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }

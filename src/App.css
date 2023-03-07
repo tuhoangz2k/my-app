@@ -2,9 +2,11 @@
   --white: #ffffff;
   --gray: #5c5c5c;
   --grayText: #aaaaaa;
+  --contentBg: #efefef;
   --textColor: #000000;
   --black: #191718;
-  --mobile: 600;
+  --mobile: 768px;
+  --pc: 1024px;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -13,4 +15,10 @@ body {
   color: var(--textColor);
   display: flex;
   min-height: 100vh;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-cover: center;
 }
